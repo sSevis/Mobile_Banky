@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Mobile Banky</string>
+    <string name="saldo_title">Aktuelles Saldo:</string>
 </resources>
