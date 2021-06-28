@@ -16,6 +16,10 @@ public class Account {
 
     private String password;
 
+    private String iban;
+
+    private double balance;
+
     public int getId() {
         return id;
     }
@@ -49,6 +53,24 @@ public class Account {
 
     public Account setPassword(String password) {
         this.password = password;
+        return this;
+    }
+
+    public String getIban() {
+        return iban;
+    }
+
+    public Account setIban(String iban) {
+        this.iban = iban;
+        return this;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public Account setBalance(double balance) {
+        this.balance = balance;
         return this;
     }
 }
