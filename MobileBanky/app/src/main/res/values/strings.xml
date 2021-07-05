@@ -7,4 +7,8 @@
     <string name="registration_text">Bereits Registriert? Anmelden.</string>
     <string name="saldo_title">Aktuelles Saldo:</string>
     <string name="payments">Zahlungen</string>
+    <string name="login">Login</string>
+    <string name="login_text">Noch nicht registriert? Registrieren.</string>
+    <string name="make_payment">Zahlung Tätigen</string>
+
 </resources>

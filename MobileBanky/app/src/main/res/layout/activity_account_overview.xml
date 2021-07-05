@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
@@ -12,11 +11,9 @@
         android:background="@color/appbar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">>
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
             <ImageButton
                 android:id="@+id/logoutButton"
                 android:layout_width="wrap_content"
@@ -28,7 +25,6 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/logout_btn" />
-
             <TextView
                 android:id="@+id/activity_title"
                 android:layout_width="match_parent"
@@ -43,11 +39,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
         </androidx.constraintlayout.widget.ConstraintLayout>
-
     </com.google.android.material.appbar.AppBarLayout>
-
     <TextView
         android:id="@+id/saldo_title"
         android:layout_width="wrap_content"
@@ -60,8 +53,7 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
-
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"/>
     <TextView
         android:id="@+id/saldo"
         android:layout_width="wrap_content"
@@ -75,7 +67,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/saldo_title" />
-
     <TextView
         android:id="@+id/iban"
         android:layout_width="wrap_content"
@@ -85,11 +76,9 @@
         android:layout_marginEnd="100dp"
         android:text="IBAN: CH7889144634268791895"
         android:textColor="@color/black"
-        android:textSize="16"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/saldo" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -102,4 +91,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iban" />
+    <Button
+        android:id="@+id/payment_button"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/make_payment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="401dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
