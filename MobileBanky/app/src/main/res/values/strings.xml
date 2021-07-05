@@ -10,5 +10,6 @@
     <string name="login">Login</string>
     <string name="login_text">Noch nicht registriert? Registrieren.</string>
     <string name="make_payment">Zahlung Tätigen</string>
+    <string name="my_payments">Meine Zahlungen</string>
 
 </resources>
