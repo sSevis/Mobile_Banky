@@ -6,4 +6,5 @@
     <string name="password_field">Passwort</string>
     <string name="registration_text">Bereits Registriert? Anmelden.</string>
     <string name="saldo_title">Aktuelles Saldo:</string>
+    <string name="payments">Zahlungen</string>
 </resources>

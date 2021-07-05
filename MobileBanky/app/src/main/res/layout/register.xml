@@ -105,7 +105,7 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="380dp"
+        android:layout_width="360dp"
         android:layout_height="50dp"
         android:layout_marginStart="26dp"
         android:layout_marginTop="28dp"
