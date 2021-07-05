@@ -18,35 +18,31 @@ public class Transaction {
         return id;
     }
 
-    public Transaction setId(int id) {
+    public void setId(int id) {
         this.id = id;
-        return this;
     }
 
     public Account getSendAccount() {
         return sendAccount;
     }
 
-    public Transaction setSendAccount(Account sendAccount) {
-        this.sendAccount = sendAccount;
-        return this;
-    }
-
     public Account getReceiveAccount() {
         return receiveAccount;
-    }
-
-    public Transaction setReceiveAccount(Account receiveAccount) {
-        this.receiveAccount = receiveAccount;
-        return this;
     }
 
     public double getAmount() {
         return amount;
     }
 
-    public Transaction setAmount(double amount) {
+    public void setSendAccount(Account sendAccount) {
+        this.sendAccount = sendAccount;
+    }
+
+    public void setReceiveAccount(Account receiveAccount) {
+        this.receiveAccount = receiveAccount;
+    }
+
+    public void setAmount(double amount) {
         this.amount = amount;
-        return this;
     }
 }

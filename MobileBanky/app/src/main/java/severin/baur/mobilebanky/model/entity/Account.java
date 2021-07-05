@@ -24,53 +24,47 @@ public class Account {
         return id;
     }
 
-    public Account setId(int id) {
+    public void setId(int id) {
         this.id = id;
-        return this;
     }
 
     public String getFullName() {
         return fullName;
     }
 
-    public Account setFullName(String fullName) {
+    public void setFullName(String fullName) {
         this.fullName = fullName;
-        return this;
     }
 
     public String getEmail() {
         return email;
     }
 
-    public Account setEmail(String email) {
+    public void setEmail(String email) {
         this.email = email;
-        return this;
     }
 
     public String getPassword() {
         return password;
     }
 
-    public Account setPassword(String password) {
+    public void setPassword(String password) {
         this.password = password;
-        return this;
     }
 
     public String getIban() {
         return iban;
     }
 
-    public Account setIban(String iban) {
+    public void setIban(String iban) {
         this.iban = iban;
-        return this;
     }
 
     public double getBalance() {
         return balance;
     }
 
-    public Account setBalance(double balance) {
+    public void setBalance(double balance) {
         this.balance = balance;
-        return this;
     }
 }
