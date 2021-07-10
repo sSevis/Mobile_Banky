@@ -11,5 +11,9 @@
     <string name="login_text">Noch nicht registriert? Registrieren.</string>
     <string name="make_payment">Zahlung Tätigen</string>
     <string name="my_payments">Meine Zahlungen</string>
+    <string name="amount_in_chf">Betrag in CHF</string>
+    <string name="iban">IBAN</string>
+    <string name="payment">Zahlung</string>
+
 
 </resources>

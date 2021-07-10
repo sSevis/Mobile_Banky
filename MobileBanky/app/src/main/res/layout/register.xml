@@ -5,17 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:background="@color/appbar"
+        android:background="@color/taskbar_main"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">>
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
@@ -38,14 +40,14 @@
         android:layout_height="215dp"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="50dp"
-        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+        app:layout_constraintBottom_toTopOf="@+id/edit_iban"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
         app:srcCompat="@drawable/logo_banky" />
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
+        android:id="@+id/edit_iban"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -92,18 +94,20 @@
             android:background="@color/textfield"
             android:hint="@string/email_field" />
     </com.google.android.material.textfield.TextInputLayout>
+
     <Button
         android:id="@+id/button"
         android:layout_width="360dp"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:layout_marginStart="26dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="26dp"
-        android:background="@color/appbar"
+        android:backgroundTint="@color/taskbar_main"
         android:text="@string/register"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
+
     <TextView
         android:id="@+id/registration_text"
         android:layout_width="wrap_content"
@@ -111,8 +115,10 @@
         android:layout_marginStart="120dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="120dp"
+        android:layout_marginBottom="51dp"
         android:text="@string/registration_text"
         android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
