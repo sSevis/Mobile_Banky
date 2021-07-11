@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         Account account = accountDao.getAccountsByEmail(email.getText().toString());
         if(account.getPassword().equals(password.getText().toString())){
             errorText.setVisibility(View.INVISIBLE);
-            openAccountOverviewActivity();
+            openAccountOverviewActivity(account.getId());
         }else{
             errorText.setVisibility(View.VISIBLE);
         }
@@ -86,8 +86,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void openAccountOverviewActivity(){
+    private void openAccountOverviewActivity(int accountId){
+        Bundle bundle = new Bundle();
         Intent intent = new Intent(this, AccountOverviewActivity.class);
+        intent.putExtra("accountId", accountId);
         startActivity(intent);
     }
 

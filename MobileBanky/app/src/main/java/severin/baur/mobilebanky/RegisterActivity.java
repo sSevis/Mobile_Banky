@@ -65,8 +65,8 @@ public class RegisterActivity extends AppCompatActivity{
         account.setPassword(password.getText().toString());
         account.setIban(generateIban());
         account.setBalance(0);
-        accountDao.insert(account);
-        openAccountOverviewActivity();
+        int id = accountDao.insert(account).intValue();
+        openAccountOverviewActivity(id);
     }
 
     private String generateIban(){
@@ -78,8 +78,10 @@ public class RegisterActivity extends AppCompatActivity{
         return iban;
     }
 
-    private void openAccountOverviewActivity(){
+    private void openAccountOverviewActivity(int accountId){
+        Bundle bundle = new Bundle();
         Intent intent = new Intent(this, AccountOverviewActivity.class);
+        intent.putExtra("accountId", accountId);
         startActivity(intent);
     }
 

@@ -65,7 +65,7 @@
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
 
     <TextView
-        android:id="@+id/saldo"
+        android:id="@+id/balance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
@@ -89,10 +89,10 @@
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/saldo" />
+        app:layout_constraintTop_toBottomOf="@+id/balance" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/accountoverview_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
@@ -105,7 +105,7 @@
         app:layout_constraintTop_toBottomOf="@+id/iban" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/makepayment_button"
         android:layout_width="360dp"
         android:layout_height="50dp"
         android:layout_marginStart="26dp"
@@ -114,13 +114,13 @@
         android:layout_marginBottom="20dp"
         android:background="@color/appbar"
         android:text="@string/make_payment"
-        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintBottom_toTopOf="@+id/mytransactions_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/accountoverview_name" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/mytransactions_button"
         android:layout_width="360dp"
         android:layout_height="50dp"
         android:layout_marginStart="26dp"
@@ -131,5 +131,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintTop_toBottomOf="@+id/makepayment_button" />
 </androidx.constraintlayout.widget.ConstraintLayout>

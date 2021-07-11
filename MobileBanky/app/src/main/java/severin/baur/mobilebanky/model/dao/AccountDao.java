@@ -17,5 +17,5 @@ public interface AccountDao {
     Account getAccountsByEmail(String email);
 
     @Insert
-    void insert(Account account);
+    Long insert(Account account);
 }
