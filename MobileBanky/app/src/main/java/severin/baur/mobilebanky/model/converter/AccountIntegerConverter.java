@@ -1,8 +1,9 @@
-package severin.baur.mobilebanky;
+package severin.baur.mobilebanky.model.converter;
 
 import androidx.room.ProvidedTypeConverter;
 import androidx.room.TypeConverter;
 
+import severin.baur.mobilebanky.MainActivity;
 import severin.baur.mobilebanky.model.dao.AccountDao;
 import severin.baur.mobilebanky.model.entity.Account;
 import severin.baur.mobilebanky.model.persitance.AppDatabase;

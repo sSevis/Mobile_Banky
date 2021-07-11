@@ -5,10 +5,9 @@ import android.content.Context;
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
-import androidx.room.TypeConverter;
 import androidx.room.TypeConverters;
 
-import severin.baur.mobilebanky.AccountIntegerConverter;
+import severin.baur.mobilebanky.model.converter.AccountIntegerConverter;
 import severin.baur.mobilebanky.model.dao.TransactionDao;
 import severin.baur.mobilebanky.model.entity.Account;
 import severin.baur.mobilebanky.model.dao.AccountDao;

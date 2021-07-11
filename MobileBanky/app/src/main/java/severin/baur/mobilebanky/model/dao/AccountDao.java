@@ -1,7 +1,10 @@
 package severin.baur.mobilebanky.model.dao;
 
 import androidx.room.Dao;
+import androidx.room.Insert;
 import androidx.room.Query;
+
+import java.util.List;
 
 import severin.baur.mobilebanky.model.entity.Account;
 
@@ -10,4 +13,9 @@ public interface AccountDao {
     @Query("SELECT * FROM account Where id = :accountId")
     Account getAccountById(int accountId);
 
+    @Query("SELECT * FROM account WHERE full_name = :email")
+    Account getAccountsByEmail(String email);
+
+    @Insert
+    void insert(Account account);
 }
