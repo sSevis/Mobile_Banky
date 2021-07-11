@@ -1,4 +1,4 @@
-package severin.baur.mobilebanky;
+package severin.baur.mobilebanky.controller;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +12,7 @@ import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.Random;
 
+import severin.baur.mobilebanky.R;
 import severin.baur.mobilebanky.model.dao.AccountDao;
 import severin.baur.mobilebanky.model.entity.Account;
 import severin.baur.mobilebanky.model.persitance.AppDatabase;

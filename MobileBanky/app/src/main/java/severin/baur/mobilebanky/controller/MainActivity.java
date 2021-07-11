@@ -1,4 +1,4 @@
-package severin.baur.mobilebanky;
+package severin.baur.mobilebanky.controller;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +11,9 @@ import android.widget.TextView;
 
 import com.google.android.material.textfield.TextInputEditText;
 
+import severin.baur.mobilebanky.R;
+import severin.baur.mobilebanky.controller.AccountOverviewActivity;
+import severin.baur.mobilebanky.controller.RegisterActivity;
 import severin.baur.mobilebanky.model.dao.AccountDao;
 import severin.baur.mobilebanky.model.entity.Account;
 import severin.baur.mobilebanky.model.persitance.AppDatabase;
@@ -72,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void loginUser(){
-        Account account = accountDao.getAccountsByEmail(email.getText().toString());
+        Account account = accountDao.getAccountByEmail(email.getText().toString());
         if(account == null){
             errorText.setVisibility(View.VISIBLE);
             return;

@@ -9,18 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileBanky">
-        <activity android:name=".MainActivity">
+        <activity android:name=".controller.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-		<activity android:name=".RegisterActivity">
+		<activity android:name=".controller.RegisterActivity">
 		</activity>
-		<activity android:name=".AccountOverviewActivity">
+		<activity android:name=".controller.AccountOverviewActivity">
 		</activity>
-		<activity android:name=".PaymentActivity">
+		<activity android:name=".controller.PaymentActivity">
 		</activity>
     </application>
 

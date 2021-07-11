@@ -1,4 +1,4 @@
-package severin.baur.mobilebanky;
+package severin.baur.mobilebanky.controller;
 
 import android.os.Bundle;
 import android.view.View;
@@ -6,6 +6,7 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import severin.baur.mobilebanky.R;
 import severin.baur.mobilebanky.model.dao.AccountDao;
 import severin.baur.mobilebanky.model.persitance.AppDatabase;
 

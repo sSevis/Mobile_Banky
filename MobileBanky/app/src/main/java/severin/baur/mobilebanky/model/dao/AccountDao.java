@@ -14,8 +14,11 @@ public interface AccountDao {
     Account getAccountById(int accountId);
 
     @Query("SELECT * FROM account WHERE email = :email")
-    Account getAccountsByEmail(String email);
+    Account getAccountByEmail(String email);
 
     @Insert
     Long insert(Account account);
+
+    @Query("SELECT * FROM account WHERE iban = :iban")
+    Account getAccountByIban(String iban);
 }

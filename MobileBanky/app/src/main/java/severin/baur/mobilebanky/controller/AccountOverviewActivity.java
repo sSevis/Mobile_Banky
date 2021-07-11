@@ -1,4 +1,4 @@
-package severin.baur.mobilebanky;
+package severin.baur.mobilebanky.controller;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import severin.baur.mobilebanky.R;
 import severin.baur.mobilebanky.model.dao.AccountDao;
 import severin.baur.mobilebanky.model.entity.Account;
 import severin.baur.mobilebanky.model.persitance.AppDatabase;
@@ -75,7 +76,7 @@ public class AccountOverviewActivity extends AppCompatActivity {
     }
 
     private void openPaymentDialog(){
-        PaymentDialog paymentDialog = new PaymentDialog();
+        PaymentDialog paymentDialog = new PaymentDialog(account.getId());
         paymentDialog.show(getSupportFragmentManager(), "payment dialog");
     }
 }
