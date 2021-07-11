@@ -13,7 +13,7 @@ public interface AccountDao {
     @Query("SELECT * FROM account Where id = :accountId")
     Account getAccountById(int accountId);
 
-    @Query("SELECT * FROM account WHERE full_name = :email")
+    @Query("SELECT * FROM account WHERE email = :email")
     Account getAccountsByEmail(String email);
 
     @Insert

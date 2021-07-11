@@ -69,7 +69,7 @@ public class AccountOverviewActivity extends AppCompatActivity {
 
     private void openPaymentActivity(int accountId){
         Bundle bundle = new Bundle();
-        Intent intent = new Intent(this, AccountOverviewActivity.class);
+        Intent intent = new Intent(this, PaymentActivity.class);
         intent.putExtra("accountId", accountId);
         startActivity(intent);
     }

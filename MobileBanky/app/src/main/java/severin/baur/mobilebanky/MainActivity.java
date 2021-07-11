@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
     private void insertTestData(){
         Account account = new Account();
         account.setFullName("John Doe");
-        account.setEmail("john.doe@gmail.com");
+        account.setEmail("test");
         account.setPassword("pwd");
         account.setIban("CH4189144542383422238");
         account.setBalance(10000);
@@ -73,6 +73,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void loginUser(){
         Account account = accountDao.getAccountsByEmail(email.getText().toString());
+        if(account == null){
+            errorText.setVisibility(View.VISIBLE);
+            return;
+        }
         if(account.getPassword().equals(password.getText().toString())){
             errorText.setVisibility(View.INVISIBLE);
             openAccountOverviewActivity(account.getId());

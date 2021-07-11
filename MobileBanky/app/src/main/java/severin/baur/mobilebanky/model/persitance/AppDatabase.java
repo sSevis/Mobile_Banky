@@ -13,7 +13,7 @@ import severin.baur.mobilebanky.model.entity.Account;
 import severin.baur.mobilebanky.model.dao.AccountDao;
 import severin.baur.mobilebanky.model.entity.Transaction;
 
-@Database(entities = {Account.class, Transaction.class}, version = 2)
+@Database(entities = {Account.class, Transaction.class}, version = 3)
 @TypeConverters(AccountIntegerConverter.class)
 public abstract class AppDatabase extends RoomDatabase {
     private static final String DB_NAME = "MobileBankyDb";
