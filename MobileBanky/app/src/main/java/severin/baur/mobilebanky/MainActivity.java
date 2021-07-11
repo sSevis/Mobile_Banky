@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
     private void findItems(){
         email = findViewById(R.id.login_email);
         password = findViewById(R.id.login_password);
-        loginButton = findViewById(R.id.loginButton);
-        registerText = findViewById(R.id.registration_text);
+        loginButton = findViewById(R.id.register_button);
+        registerText = findViewById(R.id.login_text);
         errorText = findViewById(R.id.error_text);
     }
 
